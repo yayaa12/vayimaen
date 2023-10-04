@@ -1,0 +1,64 @@
+nav {
+    width: 339px;
+    padding: 5px;
+    border-right: solid 1px #87CEEB;
+    border-left: solid 1px white;
+    border-top: solid 1px white;
+    border-bottom:solid 1px #87CEEB ;
+    z-index: 1;}
+  a {
+    color: black;
+    display: inline-block;
+    width: 50px;
+    text-decoration: none;
+    border-right: solid 1px #87CEEB;
+    border-left: solid 1px white;
+    border-top: solid 1px white;
+    border-bottom:solid 1px #87CEEB ;
+  }
+  nav{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    position:sticky;
+    top: 0;
+    scroll-behavior: smooth;
+  }
+
+html {
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  body {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background: linear-gradient(to right, rgba(12, 182, 204, 0.633) 25%, #87CEEB, #87CEEB 75%);
+    display: grid;
+    justify-items: center;
+    perspective: 600px;
+    perspective-origin: center center;
+  { height: 100% } instead of body { height: 100vh }, it works!
+  perspective-origin: center calc((var(--s, 1) * 1px) + 50%);
+  }
+  
+  .box {
+    background: linear-gradient(to right, white 70%, #b9b0b0);
+    width: 100vw;
+    height: 300px;
+    transform-style: preserve-3d;
+    transform: translateX(-50%) rotateY(65deg);
+    transform-origin: right center;
+  }
+  
+  .box2 {
+    background: linear-gradient(to left, white 70%, #b9b0b0);
+    transform: translateX(50%) rotateY(-65deg);
+    transform-origin: left center;
+  }
+  
